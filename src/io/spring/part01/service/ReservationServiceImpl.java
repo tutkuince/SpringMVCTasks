@@ -6,10 +6,13 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+import org.springframework.stereotype.Service;
+
 import io.spring.part01.domain.Player;
 import io.spring.part01.domain.Reservation;
 import io.spring.part01.domain.SportType;
 
+@Service
 public class ReservationServiceImpl implements ReservationService {
 	public static final SportType TENNIS = new SportType(1, "Tennis");
 	public static final SportType SOCCER = new SportType(2, "Soccer");
